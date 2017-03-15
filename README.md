@@ -1,5 +1,5 @@
 # 饿了么——Vue
-> 使用vue2.0仿饿了么app界面，![参考](http://coding.imooc.com/learn/list/74.html)
+> 使用vue2.0仿饿了么app界面，[参考](http://coding.imooc.com/learn/list/74.html)
 ## 技术栈
 * vue@2.0
 * vue-cli@2.0  搭建项目框架
