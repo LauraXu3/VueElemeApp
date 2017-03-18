@@ -1,7 +1,11 @@
-# sell
-
-> A Vue.js project
-
+# 饿了么——Vue
+> 使用vue2.0仿饿了么app界面，[参考](http://coding.imooc.com/learn/list/74.html)
+## 技术栈
+* vue@2.0
+* vue-cli@2.0  搭建项目框架
+* vue-router@2.0  进行页面路由切换
+* axios@0.15  进行http请求
+* 使用sass编写样式
 ## Build Setup
 
 ``` bash
