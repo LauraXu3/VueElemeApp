@@ -21,6 +21,7 @@ var appData = require('../data.json')
 
 var ratings = appData.ratings
 var seller = appData.seller
+var goods = appData.goods
 var apiRoutes = express.Router()
 
 apiRoutes.get('/ratings',function (req, res) {
@@ -37,6 +38,13 @@ apiRoutes.get('/seller',function (req, res) {
   })
 })
 
+apiRoutes.get('/goods',function (req, res) {
+  res.json({
+    errno: 0,
+    data: goods
+  })
+})
+
 app.use('/api', apiRoutes);
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
@@ -47,6 +55,7 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
 var hotMiddleware = require('webpack-hot-middleware')(compiler, {
   log: () => {}
 })
+
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
   compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {

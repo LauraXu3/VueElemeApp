@@ -15,6 +15,12 @@
   background-image: url($url + '@2x.png');
 }
 
+@mixin border-none() {
+  &:after{
+    display: none;
+  }
+}
+
 .clearfix {
   display: inline-block;
   &:after {

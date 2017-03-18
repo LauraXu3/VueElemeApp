@@ -7,6 +7,7 @@ import goods from 'components/goods/goods'
 import ratings from 'components/ratings/ratings'
 import seller from 'components/seller/seller'
 import axios from 'axios'
+
 // 安装vueRouter
 Vue.use(VueRouter)
 Vue.prototype.$http = axios
@@ -26,6 +27,8 @@ let router = new VueRouter({
   ]
 })
 
+router.push('/goods')
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -33,5 +36,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
-// router.go('goods')
